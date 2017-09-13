@@ -1,6 +1,11 @@
 #include <iostream>
 #include <math>
 
+void add();
+void subtract();
+void multiply();
+void divide();
+
 using namespace std;
 int main()
 {
@@ -12,62 +17,94 @@ int main()
     
     //Establishes voids based on User's Choice//
     switch(choice)
-    {
-        //Creating Variables//
-        double n1A, n2A;
-        float ansA;
-        double n1S, n2S;
-        float ansS; 
-        double n1M, n2M;
-        float ansM;
-        double n1D, n2D;
-        float ansD;
-        
-      //Case for Addition//
+    {   
+      //Voids for Options//
       case 1:
-        cout << "Enter a value for n1" << endl;
-        cin >> n1A;
-        cout<< "Enter a value for n2" << endl;
-        cin >> n2A;
-        
-        ansA = n1A + n2A;
-        cout << "The sum of" << n1A << " and " << n2A << " is " << ansA << endl;
-          break;
-     
-        //Subtraction//
+        add();
+        break;
       case 2:
-        cout << "Enter a value for n1" << endl;
-        cin >> n1S;
-        cout << "Enter a value for n2" << endl;
-        cin >> n2S;
+        subtract();
+        break;
+      case 3:
+        multiply();
+        break;
+      case 4:
+        divide();
+        break;
         
-        ansS = n1S - n2S;
-        cout << "The sum of" << n1S << " and " << n2S << " is " << ansS << endl;
-          break;
-        
-        //Multiplication//
-       case 3:
-        cout << "Enter a value for n1" << endl;
-        cin >> n1M;
-        cout << "Enter a value for n2" << endl;
-        cin >> n2M;
-        
-        ansM = n1M * n2M;
-        cout << "The sum of" << n1M << " and " << n2M << " is " << ansM << endl;
-          break; 
-        
-        //Division//
-        case 4:
-        cout << "Enter a value for n1" << endl;
-        cin >> n1D;
-        cout << "Enter a value for n2" << endl;
-        cin >> n2D;
-        
-        ansS = n1D / n2D;
-        cout << "The sum of" << n1D << " and " << n2D << " is " << ansD << endl;
-          break;
-          
+        cin.get
     }
-  
-  return 0;
+
 }
+
+void add()
+{
+  double n1, n2;
+  float ans;
+  cout << "Enter the first number to add" << endl;
+  cin >> n1;
+  
+  cout << "Enter the second Number" << endl;
+  cin >> n2;
+  
+  ans = n1 + n2;
+  
+  cout << n1 << " + " << n2 << " = " << ans << endl;
+  
+  main();
+}
+
+void subtract();
+{ 
+  double n1, n2;
+  float ans;
+  cout << "Enter the first number to subtract: " << endl;
+  cin >> n1;
+  
+  cout << "Enter the Second Number: " << endl;
+  cin >> n2;
+  
+  ans = n1 - n2;
+  
+  cout << n1 << " - " << n2 << " = " << ans << endl;
+  main();
+}
+
+void multiply();
+{
+  double n1, n2;
+  float ans;
+  cout << "Enter the first number to Multiply: " << endl;
+  cin >> n1;
+  
+  cout << "Enter the second number: " << endl;
+  cin >> n2;
+  
+  ans = n1 * n2;
+  
+  cout << n1 << " X " << n2 << " = " << ans << endl;
+  main();
+}
+
+void divide();
+{
+  double n1, n2;
+  float ans;
+  cout << "Enter the first number to Divide: " << endl;
+  cin >> n1;
+  
+  cout << "Enter the second number: " << endl;
+  cin >> n2;
+  
+  ans = n1 / n2;
+  
+  cout << n1 << " divided by " << n2 << " = " << ans << endl;
+  main();
+}
+
+
+
+
+
+
+
