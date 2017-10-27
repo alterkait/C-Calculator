@@ -101,10 +101,3 @@ void divide();
   cout << n1 << " divided by " << n2 << " = " << ans << endl;
   main();
 }
-
-
-
-
-
-
-
